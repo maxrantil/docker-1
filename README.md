@@ -164,7 +164,7 @@ docker attach overlord
 
 This will attach your terminal to the container's shell, allowing you to interact with it directly. To exit the shell and detach from the container, you can use the **`exit`** command.
 
-### 16. Launch a container name Abathur. It will be a Python container, 2-slim version, its /root folder will be bound to a HOME folder on your host, and its 3000 port will be bound to the 3000 port of your virtual machine. You will personalize this container so that you can use the Flask micro-framework in its latest version. You will make sure that an html page displaying "Hello World" with <h1> tags can be served by Flask. You will test that your container is properly set up by accessing, via curl or a web browser, the IP address of your virtual machine on the 3000 port. You will also list all the necessary commands in your repository.
+### 16. Launch a container name Abathur. It will be a Python container, 2-slim version, its /root folder will be bound to a HOME folder on your host, and its 3000 port will be bound to the 3000 port of your virtual machine. You will personalize this container so that you can use the Flask micro-framework in its latest version. You will make sure that an html page displaying "Hello World" with `<h1>` tags can be served by Flask. You will test that your container is properly set up by accessing, via curl or a web browser, the IP address of your virtual machine on the 3000 port. You will also list all the necessary commands in your repository.
 
 1. Create a file called **`app.py`** in the `$HOME` folder on your host. This file will contain a simple Flask app that serves an HTML page with the text "Hello World" in an **`<h1>`** tag:
 
@@ -190,10 +190,10 @@ docker run -dit \
 	--name Abathur \
 	-v $HOME:/root \
 	-p 3000:3000 \
-	python:2-slim. Inside the container's shell, install Flask and any necessary dependencies
+	python:2-slim
 ```
 
-1. Install and start the Flask app inside the container by running the following command:
+1. Install and start the Flask app with all dependencies inside the container by running the following command:
 
 ```bash
 docker exec Abathur pip install Flask
