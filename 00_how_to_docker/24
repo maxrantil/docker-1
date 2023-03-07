@@ -1,0 +1,1 @@
+docker service logs --follow --since 10m --tail 100 $(docker service ps engineering-bay -f name=engineering-bay.1 -q)
