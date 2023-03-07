@@ -234,7 +234,8 @@ docker swarm join --token <some-token-value> <ip-address-of-manager>
 
 ### 18. (create a VM and install docker)
 
-ezz
+I use QEMU/KV VM and installed Debian on it, then I installed Docker(https://docs.docker.com/engine/install/debian/).
+
 
 ### 19. Turn the VM you made into a slave of the local swarm in which your local machine is the leader (the command to take control of the VM is not requested).
 
